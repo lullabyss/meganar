@@ -1,166 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap');
-
-/*Header*/
-.accueil{
-  background-color: black;
-  width: 100%;
-  height: 680px;
-  color: white;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-/*  box-shadow: 0px 25px 25px rgba(0, 0, 0, 1);*/
+@keyframes underline {
+  0% {
+    left: unset;
+    right: 0;
+    width: 100%;
+  }
+  33% {
+    width: 0;
+  }
+  66% {
+    right: unset;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
-#cp{
-  font-size: 0.8em;
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-size: clamp(12px, 1.1vw, 20px);
+  line-height: 1.5;
   font-weight: 200;
-  font-style: italic;
-  line-height: 150%;
-  text-align: right;
-  padding-top: 80px;
-  padding-right: 300px;
 }
-
-#titre{
-  font-size: 2.1em;
-  font-weight: 200;
-  font-style: italic;
-  padding-top: 180px;
-  padding-bottom: 75px;
-}
-
-#soustitre{
-  font-size: 1em;
-  font-weight: 600;
-  font-style: italic;
-  padding: 25px;
-}
-
-.fleche{
-  height: 100px;
-}
-
-.fleche img {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
-
-
-/*Mise en page générale*/
-#bd{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-}
-#bd img {
-  display: block;
-  object-fit: contain;
-  width:  100%;
-  height: 100%;
-}
-
-
-
-/*Planches*/
-.planche {
+body a {
   position: relative;
 }
-
-.plancheun{
-  margin-top: 300px;
-  margin-bottom: 150px;
+body a:link, body a:visited, body a:hover, body a:active {
+  color: inherit;
+  text-decoration: none;
 }
-
-.planchetrois{
-/*  margin-top: 100px;
-*/  margin-bottom: 300px;
-}
-
-.planchecinq{
-  margin-top: 200px;
-  margin-bottom: 150px;
-}
-
-.planchesept{
-  margin-top: 200px;
-  margin-bottom: 100px;
-}
-
-.plancheneuf {
-  margin-top: 150px;
-  margin-bottom: 180px;
-}
-
-.plancheonze {
-  margin-top: 150px;
-  margin-bottom: 220px;
-}
-
-.planchetreize{
-  margin-top: 250px;
-  margin-bottom: 140px;
-}
-
-.planchequinze{
-  margin-top: 200px;
-}
-
-
-/*Épilogue*/
-.epilogue{
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-}
-.epilogue img {
-  display: block;
-  object-fit: contain;
-  width:  100%;
-  height: 100%;
-}
-
-
-.fabcaro{
-  margin-top: 190px;
-}
-
-#ellipse{
-  margin-top: 500px;
-}
-
-#fin{
-  margin-bottom: 100px;
-}
-
-
-
-
-/*Le double-parallaxe de gros BG*/
-.parralax-element {
+body a.link::after {
+  content: "";
   position: absolute;
+  bottom: 0;
+  left: 0em;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
 }
-
-#p2 {
-  height: 1080px;
+body a.link:hover::after {
+  animation: underline 480ms ease-in-out forwards;
 }
-#p10 {
-  height: 870px;
+body img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: none;
 }
-
-.paralax-back {
+body .hero {
   position: relative;
-  margin-bottom: 100px;
+  width: 100%;
+  height: 95vh;
+  background-color: #101015;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 4em 2em 8em;
 }
-
-.paralax-base {
+body .hero .cp {
+  font-size: 0.8em;
+  text-align: right;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 0 4em;
+}
+body .hero .titre {
+  margin: 2em 0 0;
+  font-size: 2.1em;
+}
+body .hero .soustitre {
+  font-weight: 600;
+  margin: 0;
+}
+body .hero .fleche {
   position: relative;
-  margin-bottom: 105px;
+  width: 3em;
+  aspect-ratio: 256/500;
 }
-
-.paralax-front {
+body .hero .fleche .global-link {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+body .bd {
   position: relative;
-  margin-bottom: 110px;
+  margin: 5em auto;
+  width: 95%;
+  max-width: 1280px;
 }
+body .bd .planche {
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+  position: relative;
+}
+body .bd .planche#p1 {
+  aspect-ratio: 1280/405;
+}
+body .bd .planche#p2 {
+  aspect-ratio: 1280/1080;
+}
+body .bd .planche#p3 {
+  aspect-ratio: 1280/510;
+}
+body .bd .planche#p4 {
+  aspect-ratio: 1280/1042;
+}
+body .bd .planche#p5 {
+  aspect-ratio: 1280/1103;
+}
+body .bd .planche#p6 {
+  aspect-ratio: 1280/737;
+}
+body .bd .planche#p7 {
+  aspect-ratio: 1280/798;
+}
+body .bd .planche#p8 {
+  aspect-ratio: 1280/917;
+}
+body .bd .planche#p9 {
+  aspect-ratio: 1280/1350;
+}
+body .bd .planche#p10 {
+  aspect-ratio: 1280/870;
+}
+body .bd .planche#p11 {
+  aspect-ratio: 1280/1141;
+}
+body .bd .planche#p12 {
+  aspect-ratio: 1280/928;
+}
+body .bd .planche#p13 {
+  aspect-ratio: 1280/1245;
+}
+body .bd .planche#p14 {
+  aspect-ratio: 1280/1015;
+}
+body .bd .parallax {
+  position: relative;
+}
+body .bd .parallax .layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+body .epilogue {
+  width: 90%;
+  max-width: 1080px;
+  margin-top: 70vh;
+  margin-bottom: 10em;
+}
+body .epilogue .planche {
+  aspect-ratio: 1280/780;
+}/*# sourceMappingURL=style.css.map */

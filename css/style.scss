@@ -1,0 +1,185 @@
+@keyframes underline{
+	0%{
+		left: unset;
+		right: 0;
+		width: 100%;
+	}
+
+	33%{
+		width: 0;
+	}
+
+	66%{
+		right: unset;
+		left: 0;
+	}
+
+	100%{
+		width: 100%
+	}
+}
+
+body{
+	scroll-behavior: smooth;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: italic;
+	font-size: clamp(12px, 1.1vw, 20px);
+	line-height: 1.5;
+	font-weight: 200;
+
+	a{
+		position: relative;
+
+		&:link, &:visited, &:hover, &:active{
+			color: inherit;
+			text-decoration: none;
+		}
+
+		&.link::after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0em;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+
+		}
+		&.link:hover::after{
+			animation: underline 480ms ease-in-out forwards;
+		}
+	}
+
+	img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		max-width: none;
+	}
+
+	.hero{
+		position: relative;
+		width: 100%;
+		height: 95vh;
+		background-color: #101015;
+		color: #fff;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 4em 2em 8em;
+
+		.cp{
+			font-size: 0.8em;
+			text-align: right;
+			width: 100%;
+			max-width: 1080px;
+			margin: 0 0 4em;
+		}
+
+		.titre{
+			margin: 2em 0 0;
+			font-size: 2.1em;
+		}
+
+		.soustitre{
+			font-weight: 600;
+			margin: 0;
+		}
+
+		.fleche{
+			position: relative;
+			width: 3em;
+			aspect-ratio: 256/500;
+
+			.global-link{
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.bd{
+		position: relative;
+		margin: 5em auto;
+		width: 95%;
+		max-width: 1280px;
+
+		.planche{
+			width: 100%;
+			height: auto;
+			margin-top: 20%;
+			position: relative;
+
+			&#p1{
+				aspect-ratio: 1280/405;
+			}
+			&#p2{
+				aspect-ratio: 1280/1080;
+			}
+			&#p3{
+				aspect-ratio: 1280/510;
+			}
+			&#p4{
+				aspect-ratio: 1280/1042;
+			}
+			&#p5{
+				aspect-ratio: 1280/1103;
+			}
+			&#p6{
+				aspect-ratio: 1280/737;
+			}
+			&#p7{
+				aspect-ratio: 1280/798;
+			}
+			&#p8{
+				aspect-ratio: 1280/917;
+			}
+			&#p9{
+				aspect-ratio: 1280/1350;
+			}
+			&#p10{
+				aspect-ratio: 1280/870;
+			}
+			&#p11{
+				aspect-ratio: 1280/1141;
+			}
+			&#p12{
+				aspect-ratio: 1280/928;
+			}
+			&#p13{
+				aspect-ratio: 1280/1245;
+			}
+			&#p14{
+				aspect-ratio: 1280/1015;
+			}
+		}
+
+		.parallax{
+			position: relative;
+			
+			.layer{
+				position: absolute;
+				inset: 0;
+				z-index: 1;
+			}
+		}
+	}
+
+	.epilogue{
+		width: 90%;
+		max-width: 1080px;
+		margin-top: 70vh;
+		margin-bottom: 10em;
+		
+		.planche{
+			aspect-ratio: 1280/780;
+		}
+	}
+}
