@@ -1,191 +1,183 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" type="image/x-icon" href="img/favanar.png">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/qwr4eez.css">
+	<script src="css/script.js" type="text/javascript"></script>
 	<title>Les aventures de Méganar</title>
 
 </head>
 
 <body>
 
-	<header class="accueil">
-		<p id="cp">
-			Scénario, dessin et site par Claire Havard.
-			<br>Le code complexe est réalisé par Léopold, merci à lui&#8239;!
+	<header class="hero">
+		<p class="cp">
+			Scénario, dessin et intégration par Claire Havard.
 		</p>
-		<p id="titre">
-			Pour votre confort, nous invitons à lire sur deskop.
+		<p class="titre">
+			Vous n&rsquo;avez pas envie de lire <a class="link" href="#">mon&nbsp;mémoire</a>&#8239;? Moi&nbsp;non&nbsp;plus.
+			<br>Donc j&rsquo;en ai fait une&nbsp;BD. 
 		</p>
-		<p id="soustitre">
+		<p class="soustitre">
 			Scrolling vertical
 		</p>
-		<img class="fleche" src="img/fleche.png">
+
+		<div class="fleche">
+			<img src="img/fleche.webp">
+			<a href="#begin" class="global-link"></a>
+		</div>
 	</header>
 
+	<div id="begin"></div>
 
-	<div id="bd">
-		<div class="plancheun">
-			<img src="img/planche-01.jpg">
+
+	<section class="bd">
+		<div class="planche" id="p1">
+			<img src="img/planche-01.webp" alt="Un samedi matin comme les autres, au FabLab…">
 		</div>
 
 
-		<div id="p2" class="planche">
-			<section class="parralax-element">
-				<div class="paralax-back">
-					<img src="img/planche-02-A.jpg">
-				</div>
-			</section>
-			<section class="parralax-element">
-				<div id="p2-base" class="paralax-base">
-					<img src="img/planche-02-B.png">
-				</div>
-			</section>
-			<section class="parralax-element">
-				<div id="p2-front" class="paralax-front paralax-front--transform">
-					<img src="img/planche-02-C.png">
-				</div>
-			</section>
+		<div id="p2" class="planche parallax" id="p2">
+			<div class="layer" data-depth="0">
+				<img src="img/planche-02-A.webp" alt="« Oh mon dieu, non ! C’est Capitalistor ! » s’écrie alors un usager, qui était venu passer son temps libre dans un tiers-lieu créatif.">
+			</div>
+			
+			<div class="layer" data-depth="0.25">
+				<img src="img/planche-02-B.webp" alt="« Héhé !», ricane ce vil malandrin de Capitalistor">
+			</div>
+			
+			<div class="layer" data-depth="-0.7">
+				<img src="img/planche-02-C.webp" alt="Capitalistor est entré en fracassant la fenêtre, et les débris volent à travers la pièce">
+			</div>
 		</div>
 
 
-		<div class="planche planchetrois">
-			<img src="img/planche-03.jpg">
+		<div class="planche"id="p3">
+			<img src="img/planche-03.webp" alt="Vite, Méganar ! Aide-nous à sauver notre tiers-lieu créatif, basé sur l’entraide et la solidarité ! ">
 		</div>
 
-		<div class="planche planchequatre">
-			<img src="img/planche-04.jpg">
+		<div class="planche" id="p4">
+			<img src="img/planche-04.webp" alt="Méganar contre Capitalistor">
 		</div>
 
-		<div class="planche planchecinq">
-			<img src="img/planche-05.jpg">
+		<div class="planche" id="p5">
+			<img src="img/planche-05.webp" alt="« Méganar ?!, s’exclame alors ce gredin de Capitalistor. Encore toi ? Ne cesseras-tu donc jamais de me pourchasser ? » « Et abandonner mon sport de la semaine ?! » rétorque malicieusement Méganar en armant son poing face à sa némésis.">
 		</div>
 
-		<div class="planche planchesix">
-			<img src="img/planche-06.jpg">
+		<div class="planche" id="p6">
+			<img src="img/planche-06.webp" alt="Méganar est allongé.e au sol, le poing fumant après avoir tenté de frapper Capitalistor et dans un râle de douleur : «Aïheu…». «Après tant d’année, tu continue de te fatiguer pour rien, enchaîne alors Capitalistor en toisant Méganar. Pourquoi ne veux-tu pas comprendre que face à moi et mon monopole, tu n’es qu’un petit courant radical minoritaire »">
 		</div>
 
-		<div class="planche planchesept">
-			<img src="img/planche-07.jpg">
+		<div class="planche" id="p7">
+			<img src="img/planche-07.webp" alt="Méganar se redresse soudainement, avec une énergie unique face à l’adversité : « Jamais je ne céderais devant toi, Capitalistor ! Je sais qu’à mesure du temps qui passe, tu t’affaiblis ! Et je ne te laisserai pas prendre le FabLab ! »">
 		</div>
 
-		<div class="planche planchehuit">
-			<img src="img/planche-08.jpg">
+		<div class="planche" id="p8">
+			<img src="img/planche-08.webp" alt="« C’est l’heure de la bagarre ! » lance alors Méganar.">
 		</div>
 
-		<div class="planche plancheneuf">
-			<img src="img/planche-09.jpg">
+		<div class="planche" id="p9">
+			<img src="img/planche-09.webp" alt="Face à la puissance de Capitalistor, Méganar n’a pas d’autre choix que demander de l’aide à ses ami.e.s : « J’en appelle à l’encapacitement de la population. Makers, rassemblement ! ». Cela n’effraie pas ce fieffé malotru de Capitalistor qui s’esclaffe : « Ah, ah ! C’est inutile, Méganar. Je vais déposer un brevet ! Et à moi les moyens de production ! » « Ah oui ? rétorque Méganar avec un sourrire carnassier. Pourtant je vois que tout ici fonctionne grâce à des logiciels libre… » Et toc ! Capitalistor est mouché, il ne peut répondre que par un « … Quoi ? » de surprise.">
 		</div>
 
 
-		<div id="p10"class="planche">
-			<section class="parralax-element">
-				<div class="paralax-back">
-					<img src="img/planche-10-A.png">
-				</div>
-			</section>
-			<section class="parralax-element">
-				<div id="p10-base" class="paralax-base">
-					<img src="img/planche-10-B.png">
-				</div>
-			</section>
-			<section class="parralax-element">
-				<div id="p10-front" class="paralax-front paralax-front--transform">
-					<img src="img/planche-10-C.png">
-				</div>
-			</section>
+		<div class="planche parallax" id="p10">
+			<div class="layer" data-depth="-0.5">
+				<img src="img/planche-10-A.webp" alt="Méganar arme une nouvelle fois son poing.">
+			</div>
+
+			<div class="layer" data-depth="0">
+				<img src="img/planche-10-B.webp" alt="Et cette fois-ci, Capitalistor ne peut résister !">
+			</div>
+
+			<div class="layer" data-depth="0.8">
+				<img src="img/planche-10-C.webp" alt="La puissance du coup est telle que Capitalistor en perd son chapeau !">
+			</div>
 		</div>
 
-		<div class="planche plancheonze">
-			<img src="img/planche-11.jpg">
+
+		<div class="planche" id="p11">
+			<img src="img/planche-11.webp" alt="« Attends !!, supplie Capitalistor lorsque Méganar l’attrape par le col pour lui asséner le coup final. Si tu me détruis, tu disparaîtras toi aussi. » « Qu’est-ce que tu racontes ? » « Tu n’as toujours pas compris, Méganar ? L’un sans l’autre nous ne pouvons exister. Nous sommes pareils…»">
 		</div>
 
-		<div class="planche planchedouze">
-			<img src="img/planche-12.jpg">
+		<div class="planche" id="p12">
+			<img src="img/planche-12.webp" alt="Méganar et Capitalistor sont face à face, les deux facette d’une même pièce. ">
 		</div>
 
-		<div class="planche planchetreize">
-			<img src="img/planche-13.jpg">
+		<div class="planche" id="p13">
+			<img src="img/planche-13.webp" alt="« Capitalistor… Tu ne comprends rien, dit alors Mégnar en rompant le lourd silence. Cela fait si longtemps que nous nous battons. Nous sommes deux entitées vieillissantes. Mon but a toujours été de t’arrêter. Et si pour cela mon sacrifice est nécessaire… Qu’il en soit ainsi.»">
 		</div>
 
-		<div class="planche planchequatorze">
-			<img src="img/planche-14.jpg">
+		<div class="planche" id="p14">
+			<img src="img/planche-14.webp" alt="Non Méganar ! Ce sacrifice est bien trop grand ! Tu ne peux pas abandonner tous ces gens qui croient en toi.">
 		</div>
 
-		<div class="planche planchequinze">
-			<img src="img/planche-15.jpg">
+		<div class="planche" id="p15">
+			<img src="img/planche-15.webp" alt="Mais ne vous en faites pas, les amis. Même si Méganar abandonne sa forme actuelle, sa force demeurera dans vos cœurs et vos esprits. En faisant vivre votre FabLab, votre tiers-leu créatif basé sur l’entraide et le partage, nous donnerez de nouveau corps à Méganar. Certes, son enveloppe sera peut être différente ; mais au fond Méganar sera tours là. Tout comme Capitalistor ! Méganar reviendra">
+		</div>
+	</section>
+
+	<section class="bd epilogue">
+		<div class="planche">
+			<img src="img/epilogue-00.webp" alt="Autours d’une table sont assis Claire, autrice de cette incroyable aventure, ainsi que Boris, son directeur de mémoire, et Laure, professeure et illustratice. Tous les trois sont masqués avec un masque chirurgical, témoignant d’une certaine époque sanitaire en 2021.">
 		</div>
 
-		<script src="css/leo.js"></script>
-	</div>
-
-	<section class="epilogue">
-		<div class="fabcaro" id="ellipse">
-			<img src="img/epilogue-00.jpg">
+		<div class="planche">
+			<img src="img/epilogue-01.webp" alt="« Et donc… c’est l’histoire d’un héros anarchiste qui se bat contre un méchant capitaliste… » tente alors de résumer Boris">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-01.jpg">
+		<div class="planche">
+			<img src="img/epilogue-02.webp" alt="« Oui, c’est ça ! » lui répond Claire avec enthousiasme.">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-02.jpg">
+		<div class="planche">
+			<img src="img/epilogue-03.webp" alt="Elle enchaîne : «Enfin, c’est surtout l’histoire qui raconte comment ces deux modèles sont contraints d’évoluer au sein de notre société comporaine.»">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-03.jpg">
+		<div class="planche">
+			<img src="img/epilogue-04.webp" alt="Le tunnel continue : « C’est cette réflexion qui porte mon mémoire, vous savez. La portée politique dans le contexte du FabLab.»">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-04.jpg">
+		<div class="planche">
+			<img src="img/epilogue-05.webp" alt=" Elle se justifie : « Après, les supers-héros c’est une vue d’esprit. »">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-05.jpg">
+		<div class="planche">
+			<img src="img/epilogue-06.webp" alt="« Une manière d’imaginer les choses. »">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-06.jpg">
+		<div class="planche">
+			<img src="img/epilogue-07.webp" alt="« Une allégorie, en fin de compte ? » demande Laure.">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-07.jpg">
+		<div class="planche">
+			<img src="img/epilogue-08.webp" alt="« Exactement ! C’est une allégorie. » acquiesce Claire.">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-08.jpg">
+		<div class="planche">
+			<img src="img/epilogue-09.webp" alt="« D’accord. » répond Laure. S’en suit un silence quelque peu gênant.">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-09.jpg">
+		<div class="planche">
+			<img src="img/epilogue-00.webp" alt="Le silence continue">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-00.jpg">
+		<div class="planche">
+			<img src="img/epilogue-00.webp" alt="Et continue encore.">
 		</div>
 
-		<div class="fabcaro">
-			<img src="img/epilogue-00.jpg">
-		</div>
-
-		<div class="fabcaro" id="fin">
-			<img src="img/epilogue-11.jpg">
+		<div class="planche">
+			<img src="img/epilogue-11.webp" alt="Cet instant de malaise est soudainement rompu par Boris : « Et du coup, pourquoi l’anarchisme porte des cuissardes, déjà ? »">
 		</div>	
 	</section>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(window).scroll(function(){
-				$('.accueil').css("opacity", 1 - $(window).scrollTop() / 600)
-			})
-		})
-	</script>
 
 </body>
 </html>
